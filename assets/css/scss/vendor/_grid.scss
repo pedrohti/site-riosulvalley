@@ -1,0 +1,61 @@
+/**
+ * GRID
+ * 
+ * Call it inside style using @import (e.g. @import column(12) for a grid with 12 columns)
+ */
+
+/**
+ * Flex class
+ */
+.flex {
+    display: flex;
+    &--justify {
+        &-start {
+            @extend .flex;
+            justify-content: flex-start;
+        }
+        &-end {
+            @extend .flex;
+            justify-content: flex-end;
+        }
+        &-center {
+            @extend .flex;
+            justify-content: center;
+        }
+    }
+}
+
+/**
+ * Wrapper class
+ */
+.wrapper {
+    width: 70%;
+    margin: 0 auto;
+    &-sm {
+        @extend .wrapper;
+        width: 50%;
+    }
+    &-xl {
+        @extend .wrapper;
+        width: 90%;
+    }
+}
+
+/**
+ * Space class
+ */
+.space {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    &-inner {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    @for $i from 1 through 100 {
+        &-c-#{$i} {
+            margin-top: #{$i}px;
+            margin-bottom: #{$i}px; 
+        }
+
+    }
+}

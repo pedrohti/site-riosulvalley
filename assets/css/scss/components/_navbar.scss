@@ -1,0 +1,27 @@
+.navbar {
+    background-color: $color-dark;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 0;
+    & .wrapper {
+        justify-content: space-between;
+    }
+    &__logo {
+        width: fit-content;
+        display: table;
+        align-self: center;
+    }
+    &__navigation {
+        width: fit-content;
+        align-self: center;
+        > li {
+            margin-left: 20px;
+            display: inline-block;
+            > a {
+                color: $color-white;
+            }
+        }
+    }
+}
