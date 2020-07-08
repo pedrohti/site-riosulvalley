@@ -1,0 +1,31 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+ .slider {
+    z-index: -1;
+}
+.slider .slider__item {
+    height: 100vh !important;
+}
+::-webkit-scrollbar {
+    width: 12px;  /* for vertical scrollbars */
+    height: 12px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+    background: darkgray;
+    border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: #000000;
+}
